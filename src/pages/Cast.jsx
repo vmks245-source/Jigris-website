@@ -25,7 +25,7 @@ const Cast = () => {
     { 
       name: 'Mast Ali', 
       role: 'Bilal', 
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80' 
+      image: '/images/mast-ali.jpg' 
     },
   ];
 

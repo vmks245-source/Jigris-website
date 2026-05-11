@@ -31,9 +31,15 @@ const Home = () => {
             4 Friends. 1 Maruti 800. 0 GPS. 
             A high-speed emotional journey across the heart of India.
           </p>
-          <button className="blue-btn" style={{ background: 'white', color: 'var(--electric-blue)', marginTop: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <a 
+            href="https://www.youtube.com/watch?v=j7avSwVY_Bs" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="blue-btn" 
+            style={{ background: 'white', color: 'var(--electric-blue)', marginTop: '20px', display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}
+          >
             <Play size={18} fill="currentColor" /> WATCH TRAILER
-          </button>
+          </a>
         </div>
       </div>
 
