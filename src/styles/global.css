@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --primary-color: #4b3621;
+  --accent-color: #a0522d;
+  --bg-color: #f4ecd8;
+  --text-color: #2e1e0f;
+  --paper-color: #fdf5e6;
+  --vintage-red: #8b0000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  background-color: var(--bg-color);
+  background-image: 
+    url("https://www.transparenttextures.com/patterns/topography.png"),
+    radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(0,0,0,0.1) 100%);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .vintage-font {
+  font-family: 'Special Elite', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Common Vintage Elements */
+.polaroid {
+  background: white;
+  padding: 15px 15px 40px 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  filter: sepia(0.3) contrast(1.1);
+}
+
+.polaroid-caption {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
+
+.vintage-ticket {
+  background-color: #e6c9a8;
+  border: 2px dashed var(--primary-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px var(--primary-color);
+  transition: all 0.2s;
+}
+
+.vintage-ticket:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--primary-color);
+}
+
+.diary-page {
+  background: var(--paper-color);
+  padding: 40px;
+  border: 1px solid #d2b48c;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.diary-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 30px;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+/* Navigation */
+.navbar {
+  background-color: rgba(75, 54, 33, 0.9);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px double var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fdf5e6;
+  text-decoration: none;
+  font-family: 'Special Elite', cursive;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #d2b48c;
+}
+
+.brand {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5rem;
+  color: #fdf5e6;
+}
+
+/* Layout helpers */
+.page {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
