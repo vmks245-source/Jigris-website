@@ -50,9 +50,9 @@ const Home = () => {
           <p style={{ opacity: 0.6 }}>Experience the ride on the big screen.</p>
         </div>
         <div className="card" style={{ background: 'var(--primary-blue)', color: 'white' }}>
-          <h4 style={{ color: 'var(--cyan-accent)' }}>STREAMING</h4>
-          <p style={{ fontSize: '2rem', fontWeight: '800', margin: '10px 0' }}>JAN 06, 2026</p>
-          <p style={{ opacity: 0.8 }}>Coming soon to Sun NXT & Prime Video.</p>
+          <h4 style={{ color: 'var(--cyan-accent)' }}>STREAMING NOW</h4>
+          <p style={{ fontSize: '2rem', fontWeight: '800', margin: '10px 0' }}>OUT NOW</p>
+          <p style={{ opacity: 0.8 }}>Watch it on Sun NXT & Amazon Prime Video.</p>
         </div>
       </div>
 
