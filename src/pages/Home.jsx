@@ -11,8 +11,8 @@ const Home = () => {
 
       <div style={{ position: 'relative', marginBottom: '80px' }}>
         <img 
-          src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&w=1200&q=80" 
-          alt="Road Trip" 
+          src="/images/home-poster.jpg" 
+          alt="JIGRIS Official Poster" 
           className="hero-image"
         />
         <div style={{ 

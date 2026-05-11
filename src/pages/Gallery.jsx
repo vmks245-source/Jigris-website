@@ -2,12 +2,12 @@ import React from 'react';
 
 const Gallery = () => {
   const images = [
+    '/images/promo-1.jpg',
+    '/images/promo-2.jpg',
+    '/images/promo-3.jpg',
     'https://images.unsplash.com/photo-1512100356956-c1227c3317bb?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
   ];
 
   return (

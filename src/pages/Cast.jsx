@@ -5,22 +5,22 @@ const Cast = () => {
     { 
       name: 'Krishna Burugula', 
       role: 'Karthik', 
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80' 
+      image: '/images/krishna-burugula.jpg' 
     },
     { 
       name: 'Ram Nitin', 
       role: 'Praveen', 
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80' 
+      image: '/images/ram-nithin.jpg' 
     },
     { 
       name: 'Mani Vaka', 
       role: 'Prashanth', 
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80' 
+      image: '/images/mani-vaka.jpg' 
     },
     { 
       name: 'Dheeraj Athreya', 
       role: 'Vinay', 
-      image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80' 
+      image: '/images/dheeraj-athreya.jpg' 
     },
     { 
       name: 'Mast Ali', 
@@ -43,7 +43,7 @@ const Cast = () => {
             <img 
               src={member.image} 
               alt={member.name} 
-              style={{ width: '100%', height: '280px', objectFit: 'cover' }}
+              style={{ width: '100%', height: '350px', objectFit: 'cover' }}
             />
             <div style={{ padding: '20px' }}>
               <h4 style={{ margin: '0', fontSize: '1.2rem', color: 'var(--primary-blue)' }}>{member.name}</h4>
