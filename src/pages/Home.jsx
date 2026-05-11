@@ -55,6 +55,26 @@ const Home = () => {
           <p style={{ opacity: 0.8 }}>Coming soon to Sun NXT & Prime Video.</p>
         </div>
       </div>
+
+      <div style={{ marginTop: '100px', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '2.5rem', color: 'var(--primary-blue)', marginBottom: '50px' }}>Visionaries behind the ride</h2>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '60px', flexWrap: 'wrap' }}>
+          <div style={{ textAlign: 'center', maxWidth: '250px' }}>
+            <div style={{ width: '200px', height: '200px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto 20px auto', border: '5px solid var(--electric-blue)', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+              <img src="/images/director.png" alt="Director Harish Reddy Uppula" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
+            <h4 style={{ margin: '0', fontSize: '1.2rem', color: 'var(--primary-blue)' }}>Harish Reddy Uppula</h4>
+            <p style={{ margin: '5px 0 0 0', color: 'var(--electric-blue)', fontWeight: '600', fontSize: '0.9rem' }}>DIRECTOR</p>
+          </div>
+          <div style={{ textAlign: 'center', maxWidth: '250px' }}>
+            <div style={{ width: '200px', height: '200px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto 20px auto', border: '5px solid var(--electric-blue)', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+              <img src="/images/producer.png" alt="Producer Krishna Vodapalli" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
+            <h4 style={{ margin: '0', fontSize: '1.2rem', color: 'var(--primary-blue)' }}>Krishna Vodapalli</h4>
+            <p style={{ margin: '5px 0 0 0', color: 'var(--electric-blue)', fontWeight: '600', fontSize: '0.9rem' }}>PRODUCER</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
