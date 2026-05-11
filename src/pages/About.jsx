@@ -22,7 +22,7 @@ const About = () => {
 
         <div style={{ margin: '30px 0', border: '1px solid #d2b48c', padding: '15px', background: 'rgba(0,0,0,0.03)' }}>
           <h3 style={{ margin: '0 0 10px 0' }}>The Rules of the Road:</h3>
-          <ul style={{ list-styleType: 'square' }}>
+          <ul style={{ listStyleType: 'square' }}>
             <li>No Money (Whatever is in the glovebox is all we have).</li>
             <li>No Smartphones (Left them in a box in Hyderabad).</li>
             <li>No GPS (Just an old paper map that Bilal gave us).</li>
