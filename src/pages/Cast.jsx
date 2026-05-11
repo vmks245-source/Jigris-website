@@ -2,54 +2,66 @@ import React from 'react';
 
 const Cast = () => {
   const castMembers = [
-    { name: 'Krishna Burugula', role: 'Karthik', rotation: '-3deg' },
-    { name: 'Ram Nitin', role: 'Praveen', rotation: '2deg' },
-    { name: 'Mani Vaka', role: 'Prashanth', rotation: '-1deg' },
-    { name: 'Dheeraj Athreya', role: 'Vinay', rotation: '4deg' },
-    { name: 'Mast Ali', role: 'Bilal', rotation: '-2deg' },
+    { 
+      name: 'Krishna Burugula', 
+      role: 'Karthik', 
+      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80' 
+    },
+    { 
+      name: 'Ram Nitin', 
+      role: 'Praveen', 
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80' 
+    },
+    { 
+      name: 'Mani Vaka', 
+      role: 'Prashanth', 
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80' 
+    },
+    { 
+      name: 'Dheeraj Athreya', 
+      role: 'Vinay', 
+      image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80' 
+    },
+    { 
+      name: 'Mast Ali', 
+      role: 'Bilal', 
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80' 
+    },
   ];
 
   return (
-    <div className="page cast-page">
-      <h1 style={{ textAlign: 'center', marginBottom: '50px' }}>The Crew</h1>
+    <div className="page cast-modern">
+      <h2 style={{ fontSize: '3rem', color: 'var(--primary-blue)', marginBottom: '50px' }}>The Crew</h2>
       
       <div style={{ 
-        display: 'flex', 
-        flexWrap: 'wrap', 
-        justifyContent: 'center', 
-        gap: '40px',
-        padding: '20px'
+        display: 'grid', 
+        gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', 
+        gap: '30px'
       }}>
         {castMembers.map((member, index) => (
-          <div 
-            key={index} 
-            className="polaroid" 
-            style={{ transform: `rotate(${member.rotation})` }}
-          >
-            <div style={{ 
-              width: '220px', 
-              height: '250px', 
-              backgroundColor: '#e0e0e0',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              border: '1px solid #ccc',
-              fontSize: '1.5rem',
-              color: '#999',
-              fontWeight: 'bold'
-            }}>
-              PHOTO
-            </div>
-            <div className="polaroid-caption">
-              <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>{member.name}</div>
-              <div style={{ fontSize: '0.9rem', color: '#666' }}>as {member.role}</div>
+          <div key={index} className="card" style={{ padding: '0', overflow: 'hidden' }}>
+            <img 
+              src={member.image} 
+              alt={member.name} 
+              style={{ width: '100%', height: '280px', objectFit: 'cover' }}
+            />
+            <div style={{ padding: '20px' }}>
+              <h4 style={{ margin: '0', fontSize: '1.2rem', color: 'var(--primary-blue)' }}>{member.name}</h4>
+              <p style={{ margin: '5px 0 0 0', color: 'var(--electric-blue)', fontWeight: '600' }}>as {member.role}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div style={{ marginTop: '60px', textAlign: 'center' }}>
-        <p className="vintage-font" style={{ fontSize: '1.5rem' }}>"Brothers for life, legends for a ride."</p>
+      <div style={{ 
+        marginTop: '80px', 
+        padding: '40px', 
+        borderTop: '2px solid var(--soft-gray)',
+        textAlign: 'center'
+      }}>
+        <p style={{ fontSize: '1.5rem', fontWeight: '300', fontStyle: 'italic', color: 'var(--primary-blue)' }}>
+          "It's not about the destination, it's about the brothers you have in the back seat."
+        </p>
       </div>
     </div>
   );

@@ -1,42 +1,52 @@
 import React from 'react';
+import { Play } from 'lucide-react';
 
 const Home = () => {
   return (
-    <div className="page home-page">
-      <section style={{ textAlign: 'center', padding: '60px 20px' }}>
-        <h1 style={{ fontSize: '4.5rem', margin: '0 0 10px 0', color: 'var(--primary-color)' }}>JIGRIS</h1>
-        <h2 style={{ fontSize: '2rem', marginBottom: '30px' }}>- One Last Ride -</h2>
-        
-        <div className="diary-page" style={{ marginBottom: '40px' }}>
-          <p style={{ fontSize: '1.2rem', fontStyle: 'italic' }}>
-            "4 childhood friends. 1 old Maruti 800. No money. No phones. No GPS. 
-            Just a promise to make it to Goa for one final adventure."
+    <div className="page home-modern">
+      <header style={{ marginBottom: '60px' }}>
+        <h1 style={{ fontSize: '5rem', color: 'var(--primary-blue)', margin: 0 }}>JIGRIS</h1>
+        <h2 style={{ fontSize: '1.5rem', color: 'var(--electric-blue)', letterSpacing: '8px' }}>One Last Ride</h2>
+      </header>
+
+      <div style={{ position: 'relative', marginBottom: '80px' }}>
+        <img 
+          src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&w=1200&q=80" 
+          alt="Road Trip" 
+          className="hero-image"
+        />
+        <div style={{ 
+          position: 'absolute', 
+          bottom: '-30px', 
+          right: '50px',
+          background: 'var(--electric-blue)',
+          padding: '40px',
+          borderRadius: '15px',
+          color: 'white',
+          boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+          maxWidth: '400px'
+        }}>
+          <h3 style={{ margin: '0 0 15px 0' }}>The Blueprint</h3>
+          <p style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+            4 Friends. 1 Maruti 800. 0 GPS. 
+            A high-speed emotional journey across the heart of India.
           </p>
-          <div style={{ marginTop: '30px', borderTop: '1px dashed #ccc', paddingTop: '20px' }}>
-            <p><strong>Theatrical Release:</strong> <span style={{ color: 'var(--vintage-red)' }}>November 14, 2025</span></p>
-            <p><strong>OTT Premiere:</strong> <span style={{ color: 'var(--vintage-red)' }}>January 6, 2026</span></p>
-          </div>
+          <button className="blue-btn" style={{ background: 'white', color: 'var(--electric-blue)', marginTop: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Play size={18} fill="currentColor" /> WATCH TRAILER
+          </button>
         </div>
+      </div>
 
-        <div style={{ marginTop: '40px' }}>
-          <a href="#" className="vintage-ticket">
-            WATCH TRAILER
-          </a>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginTop: '100px' }}>
+        <div className="card">
+          <h4 style={{ color: 'var(--electric-blue)' }}>THEATRICAL</h4>
+          <p style={{ fontSize: '2rem', fontWeight: '800', margin: '10px 0' }}>NOV 14, 2025</p>
+          <p style={{ opacity: 0.6 }}>Experience the ride on the big screen.</p>
         </div>
-      </section>
-
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '40px' }}>
-        <div className="polaroid" style={{ transform: 'rotate(-5deg)' }}>
-          <div style={{ width: '200px', height: '150px', background: '#ccc', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-             <span style={{ fontFamily: 'Special Elite' }}>MARUTI 800</span>
-          </div>
-          <div className="polaroid-caption">The Ride</div>
-        </div>
-        <div className="polaroid" style={{ transform: 'rotate(3deg)' }}>
-          <div style={{ width: '200px', height: '150px', background: '#ddd', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-             <span style={{ fontFamily: 'Special Elite' }}>GOA ROAD</span>
-          </div>
-          <div className="polaroid-caption">The Destination</div>
+        <div className="card" style={{ background: 'var(--primary-blue)', color: 'white' }}>
+          <h4 style={{ color: 'var(--cyan-accent)' }}>STREAMING</h4>
+          <p style={{ fontSize: '2rem', fontWeight: '800', margin: '10px 0' }}>JAN 06, 2026</p>
+          <p style={{ opacity: 0.8 }}>Coming soon to Sun NXT & Prime Video.</p>
         </div>
       </div>
     </div>

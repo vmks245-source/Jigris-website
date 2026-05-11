@@ -1,47 +1,56 @@
 import React from 'react';
+import { Info, Map, Smartphone, DollarSign, Navigation } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="page about-page">
-      <div className="diary-page">
-        <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>The Journal Entry</h1>
-        
-        <p style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Date: Summer 2025</p>
-        
-        <p>
-          It started with a phone call no one ever wants to get. Mani (Prashanth) was diagnosed. 
-          The Doctors said "time is limited". But we've never been ones to listen to doctors, 
-          especially when there's a sunset waiting for us in Goa.
-        </p>
-
-        <p>
-          The plan was simple, or stupid, depending on who you ask:
-          Karthik, Praveen, Vinay, and Prashanth. Four brothers since the first grade.
-          One final wish: To see the ocean together one last time.
-        </p>
-
-        <div style={{ margin: '30px 0', border: '1px solid #d2b48c', padding: '15px', background: 'rgba(0,0,0,0.03)' }}>
-          <h3 style={{ margin: '0 0 10px 0' }}>The Rules of the Road:</h3>
-          <ul style={{ listStyleType: 'square' }}>
-            <li>No Money (Whatever is in the glovebox is all we have).</li>
-            <li>No Smartphones (Left them in a box in Hyderabad).</li>
-            <li>No GPS (Just an old paper map that Bilal gave us).</li>
-            <li>The Maruti 800 must survive.</li>
-          </ul>
+    <div className="page about-modern">
+      <h2 style={{ fontSize: '3rem', color: 'var(--primary-blue)', marginBottom: '40px' }}>Mission Profile</h2>
+      
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+        <div className="card" style={{ borderLeft: '5px solid var(--electric-blue)' }}>
+          <h3 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}><Info color="var(--electric-blue)" /> The Objective</h3>
+          <p>
+            When Prashanth was diagnosed, we didn't look for answers in a hospital. We looked for them in the 
+            rearview mirror of our childhood. The goal: Goa. The deadline: Before time runs out.
+          </p>
         </div>
 
-        <p>
-          It's not just a road trip. it's a race against time, a battle against broken engines, 
-          and a celebration of a friendship that refuse to say goodbye.
-        </p>
-        
-        <div style={{ textAlign: 'right', marginTop: '40px', fontFamily: 'Special Elite' }}>
-          - The JIGRIS Crew
+        <div className="card">
+          <h3 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}><Map color="var(--electric-blue)" /> The Route</h3>
+          <p>
+            Hyderabad to Goa. 650 Kilometers of broken roads, rural weddings, and dacoit territory. 
+            All in a car that older than most of its passengers.
+          </p>
         </div>
       </div>
-      
-      <div style={{ marginTop: '50px', textAlign: 'center' }}>
-         <img src="https://www.transparenttextures.com/patterns/old-map.png" alt="Map Texture" style={{ opacity: 0.2, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none' }} />
+
+      <div style={{ marginTop: '60px', background: 'var(--dashboard-dark)', padding: '60px', borderRadius: '20px', color: 'white' }}>
+        <h3 style={{ color: 'var(--cyan-accent)', textAlign: 'center', marginBottom: '40px' }}>CAR SPECS: MARUTI 800 (1998)</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px', textAlign: 'center' }}>
+          <div>
+            <Smartphone size={32} color="var(--cyan-accent)" style={{ marginBottom: '15px' }} />
+            <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>NO PHONES</p>
+            <p style={{ fontSize: '0.8rem', opacity: 0.6 }}>Total connectivity isolation</p>
+          </div>
+          <div>
+            <DollarSign size={32} color="var(--cyan-accent)" style={{ marginBottom: '15px' }} />
+            <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>NO MONEY</p>
+            <p style={{ fontSize: '0.8rem', opacity: 0.6 }}>Relying on friendship & Bilal</p>
+          </div>
+          <div>
+            <Navigation size={32} color="var(--cyan-accent)" style={{ marginBottom: '15px' }} />
+            <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>NO GPS</p>
+            <p style={{ fontSize: '0.8rem', opacity: 0.6 }}>Paper maps and gut instinct</p>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ marginTop: '60px', textAlign: 'center' }}>
+        <img 
+          src="https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?auto=format&fit=crop&w=1200&q=80" 
+          alt="Map" 
+          style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '15px', filter: 'grayscale(1) brightness(0.8) contrast(1.2)' }}
+        />
       </div>
     </div>
   );
